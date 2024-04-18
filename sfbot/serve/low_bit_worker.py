@@ -14,7 +14,7 @@ from fastapi.concurrency import run_in_threadpool
 from fastapi.responses import StreamingResponse, JSONResponse
 import uvicorn
 
-from fastchat.serve.base_model_worker import BaseModelWorker
+from sfbot.serve.base_model_worker import BaseModelWorker
 from fastchat.serve.model_worker import (
     logger,
     worker_id,

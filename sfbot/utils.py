@@ -143,3 +143,9 @@ def is_partial_stop(output: str, stop_str: str):
         if stop_str.startswith(output[-i:]):
             return True
     return False
+
+def pretty_print_semaphore(semaphore):
+    """Print a semaphore in better format."""
+    if semaphore is None:
+        return "None"
+    return f"Semaphore(value={semaphore._value}, locked={semaphore.locked()})"
