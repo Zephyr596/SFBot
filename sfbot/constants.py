@@ -17,7 +17,7 @@ INACTIVE_MSG = "THIS SESSION HAS BEEN INACTIVE FOR TOO LONG. PLEASE REFRESH THIS
 SLOW_MODEL_MSG = "⚠️  Both models will show the responses all at once. Please stay patient as it may take over 30 seconds."
 RATE_LIMIT_MSG = "**RATE LIMIT OF THIS MODEL IS REACHED. PLEASE COME BACK LATER OR TRY OTHER MODELS.**"
 # Maximum input length
-INPUT_CHAR_LEN_LIMIT = int(os.getenv("FASTCHAT_INPUT_CHAR_LEN_LIMIT", 12000))
+INPUT_CHAR_LEN_LIMIT = int(os.getenv("INPUT_CHAR_LEN_LIMIT", 12000))
 # Maximum conversation turns
 CONVERSATION_TURN_LIMIT = 50
 # Session expiration time
@@ -30,12 +30,12 @@ CPU_ISA = os.getenv("CPU_ISA")
 
 ##### For the controller and workers (could be overwritten through ENV variables.)
 CONTROLLER_HEART_BEAT_EXPIRATION = int(
-    os.getenv("FASTCHAT_CONTROLLER_HEART_BEAT_EXPIRATION", 90)
+    os.getenv("CONTROLLER_HEART_BEAT_EXPIRATION", 90)
 )
-WORKER_HEART_BEAT_INTERVAL = int(os.getenv("FASTCHAT_WORKER_HEART_BEAT_INTERVAL", 45))
-WORKER_API_TIMEOUT = int(os.getenv("FASTCHAT_WORKER_API_TIMEOUT", 100))
+WORKER_HEART_BEAT_INTERVAL = int(os.getenv("WORKER_HEART_BEAT_INTERVAL", 45))
+WORKER_API_TIMEOUT = int(os.getenv("WORKER_API_TIMEOUT", 100))
 WORKER_API_EMBEDDING_BATCH_SIZE = int(
-    os.getenv("FASTCHAT_WORKER_API_EMBEDDING_BATCH_SIZE", 4)
+    os.getenv("WORKER_API_EMBEDDING_BATCH_SIZE", 4)
 )
 
 

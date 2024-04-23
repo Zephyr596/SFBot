@@ -19,7 +19,7 @@ from fastchat.serve.model_worker import (
     logger,
     worker_id,
 )
-from fastchat.serve.base_model_worker import (
+from sfbot.serve.base_model_worker import (
     create_background_tasks,
     acquire_worker_semaphore,
     release_worker_semaphore,

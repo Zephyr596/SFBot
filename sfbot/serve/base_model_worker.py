@@ -1,3 +1,4 @@
+"""Base model worker with common dataclassed and functions"""
 import asyncio
 import threading
 import time
@@ -5,10 +6,10 @@ from typing import List
 
 from fastapi import FastAPI, Request, BackgroundTasks
 from fastapi.responses import StreamingResponse, JSONResponse
+from fastchat.conversation import Conversation
 import requests
 
 from sfbot.constants import WORKER_HEART_BEAT_INTERVAL
-from sfbot.conversation import Conversation
 from sfbot.utils import pretty_print_semaphore, build_logger
 
 
@@ -68,8 +69,8 @@ class BaseModelWorker:
         """
         can be overrided to costomize the conversation template for different model workers.
         """
-        from sfbot.conversation import get_conv_template
-        from sfbot.model.model_adapter import get_conversation_template
+        from fastchat.conversation import get_conv_template
+        from fastchat.model.model_adapter import get_conversation_template
 
         if conv_template:
             conv = get_conv_template(conv_template)
