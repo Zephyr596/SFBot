@@ -174,9 +174,6 @@ class BaseModelWorker:
     def generate_gate(self, params):
         raise NotImplementedError
 
-    def get_embeddings(self, params):
-        raise NotImplementedError
-
 
 def release_worker_semaphore():
     worker.semaphore.release()
