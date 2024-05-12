@@ -52,4 +52,12 @@ ax.bar_label(rects2, padding=3)
 
 fig.tight_layout()
 
-plt.savefig("time.png")
+plt.savefig("./png/time.png")
+
+"""
+          Llma-2-7b   LLama-2-13b
+Standard  30.1276     64.7866
+SYM_INT4  1.68288	  9.57686
+ASYM_INT4 11.8801     30.0044
+INT8      34.3865     73.7418
+"""

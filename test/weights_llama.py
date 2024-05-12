@@ -74,7 +74,7 @@ weight_asym_np = flattened_weight_asym.numpy()
 # plt.legend()
 
 # plt.tight_layout()
-# plt.savefig("test_sym.png")
+# plt.savefig("./png/test_sym.png")
 
 
 
@@ -95,4 +95,4 @@ plt.yticks(ticks=np.linspace(0, max_count, 5), labels=['{:.1f}m'.format(x / 1e6)
 plt.legend()
 
 plt.tight_layout()
-plt.savefig("test_asym.png")
+plt.savefig("./png/test_asym.png")
