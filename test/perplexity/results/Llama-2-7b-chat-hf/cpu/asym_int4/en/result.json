@@ -1,0 +1,10 @@
+{
+  "results": 5.529727149690901,
+  "config": {
+    "model": "Llama-2-7b-chat-hf",
+    "precision": "asym_int4",
+    "device": "cpu",
+    "seq_len": 512,
+    "language": "en"
+  }
+}

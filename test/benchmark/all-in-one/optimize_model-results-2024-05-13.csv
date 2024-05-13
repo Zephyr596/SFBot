@@ -1,0 +1,2 @@
+,model,1st token avg latency (ms),2+ avg latency (ms/token),encoder time (ms),input/output tokens,batch_size,actual input/output tokens,num_beams,low_bit,cpu_embedding,model loading time (s),peak mem (GB),streaming,use_fp16_torch_dtype
+0,meta-llama/Llama-2-7b-chat-hf,4041.76,159.51,0.0,1024-128,1,1025-128,1,sym_int4,False,1.06,N/A,N/A,N/A

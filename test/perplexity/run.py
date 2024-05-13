@@ -32,8 +32,9 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True)
     tokenizer.model_max_length = args.seq_len
 
-    en_datasets = ["narrativeqa", "qasper", "multifieldqa_en", "hotpotqa", "2wikimqa", "musique", "gov_report", 
-                       "qmsum", "multi_news",  "trec", "triviaqa", "samsum", "passage_count", "passage_retrieval_en"]
+    # en_datasets = ["narrativeqa", "qasper", "multifieldqa_en", "hotpotqa", "2wikimqa", "musique", "gov_report", 
+    #                    "qmsum", "multi_news",  "trec", "triviaqa", "samsum", "passage_count", "passage_retrieval_en"]
+    en_datasets = ["qasper", "multifieldqa_en"]
     zh_datasets = ["multifieldqa_zh", "dureader", "vcsum", "lsht", "passage_retrieval_zh"]
 
     if args.datasets is None:

@@ -26,13 +26,14 @@ if __name__ == '__main__':
                         help='Max tokens to predict')
 
     args = parser.parse_args()
-    model_path = args.repo_id_or_model_path
+    model_path = "/home/llm/models/Llama-2-7b-chat-hf"
 
     # Load model in 4 bit,
     # which convert the relevant layers in the model into INT4 format
     #pdb.set_trace()
     model = AutoModelForCausalLM.from_pretrained(model_path,
-                                                 trust_remote_code=True)
+                                                 trust_remote_code=True,
+                                                 load_in_low_bit="sym_int4")
    
     print(model)
     # Load tokenizer
@@ -40,7 +41,7 @@ if __name__ == '__main__':
     
     # Generate predicted tokens
     with torch.inference_mode():
-        prompt = LLAMA2_PROMPT_FORMAT.format(prompt=args.prompt)
+        prompt = LLAMA2_PROMPT_FORMAT.format(prompt="What is AI?")
         input_ids = tokenizer.encode(prompt, return_tensors="pt")
         st = time.time()
         # if your selected model is capable of utilizing previous key/value attentions
