@@ -37,7 +37,7 @@ from ipex_llm.utils.common import invalidInputError
 
 LLAMA_IDS = ['meta-llama/Llama-2-7b-chat-hf','meta-llama/Llama-2-13b-chat-hf',
              'meta-llama/Llama-2-70b-chat-hf','decapoda-research/llama-7b-hf',
-             'decapoda-research/llama-65b-hf','lmsys/vicuna-7b-v1.5',
+             'decapoda-research/llama-65b-hf','Llama-2-7b-chat-hf',
              'lmsys/vicuna-13b-v1.3','lmsys/vicuna-33b-v1.3','project-baize/merged-baize-30b']
 
 CHATGLM_IDS = ['THUDM/chatglm-6b', 'THUDM/chatglm2-6b', 'THUDM/chatglm3-6b']
