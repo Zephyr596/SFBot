@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sfbot
+Version: 0.1.0
+Summary: Chatbot system
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: fastapi
+Requires-Dist: fastchat
+
+# SFBot
+Secure Fast ChatBot using int4 quantization to load `Llama-2-7b-chat-hf` model

@@ -1,0 +1,21 @@
+2024-05-21 17:01:08 | INFO | stdout | usage: low_bit_worker.py [-h] [--host HOST] [--port PORT] [--worker-address WORKER_ADDRESS] [--controller-address CONTROLLER_ADDRESS] [--model-path MODEL_PATH] [--model-names MODEL_NAMES]
+2024-05-21 17:01:08 | INFO | stdout |                          [--limit-worker-concurrency LIMIT_WORKER_CONCURRENCY] [--no-register] [--conv-template CONV_TEMPLATE] [--stream-interval STREAM_INTERVAL] [--low-bit LOW_BIT] [--device DEVICE]
+2024-05-21 17:01:08 | INFO | stdout |                          [--trust-remote-code]
+2024-05-21 17:01:08 | INFO | stdout | 
+2024-05-21 17:01:08 | INFO | stdout | options:
+2024-05-21 17:01:08 | INFO | stdout |   -h, --help            show this help message and exit
+2024-05-21 17:01:08 | INFO | stdout |   --host HOST
+2024-05-21 17:01:08 | INFO | stdout |   --port PORT
+2024-05-21 17:01:08 | INFO | stdout |   --worker-address WORKER_ADDRESS
+2024-05-21 17:01:08 | INFO | stdout |   --controller-address CONTROLLER_ADDRESS
+2024-05-21 17:01:08 | INFO | stdout |   --model-path MODEL_PATH
+2024-05-21 17:01:08 | INFO | stdout |   --model-names MODEL_NAMES
+2024-05-21 17:01:08 | INFO | stdout |                         Optional display comma separated names
+2024-05-21 17:01:08 | INFO | stdout |   --limit-worker-concurrency LIMIT_WORKER_CONCURRENCY
+2024-05-21 17:01:08 | INFO | stdout |   --no-register
+2024-05-21 17:01:08 | INFO | stdout |   --conv-template CONV_TEMPLATE
+2024-05-21 17:01:08 | INFO | stdout |                         Conversation prompt template.
+2024-05-21 17:01:08 | INFO | stdout |   --stream-interval STREAM_INTERVAL
+2024-05-21 17:01:08 | INFO | stdout |   --low-bit LOW_BIT     Low bit format.
+2024-05-21 17:01:08 | INFO | stdout |   --device DEVICE       Device for executing model, cpu/xpu
+2024-05-21 17:01:08 | INFO | stdout |   --trust-remote-code   Trust remote code (e.g., from HuggingFace) whendownloading the model and tokenizer.

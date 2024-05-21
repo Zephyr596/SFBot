@@ -30,13 +30,13 @@ import shortuuid
 import tiktoken
 import uvicorn
 
-from fastchat.constants import (
+from sfbot.constants import (
     WORKER_API_TIMEOUT,
     WORKER_API_EMBEDDING_BATCH_SIZE,
     ErrorCode,
 )
 from fastchat.conversation import Conversation, SeparatorStyle
-from fastchat.protocol.openai_api_protocol import (
+from sfbot.serve.protocol.openai_api_protocol import (
     ChatCompletionRequest,
     ChatCompletionResponse,
     ChatCompletionResponseStreamChoice,
@@ -58,13 +58,13 @@ from fastchat.protocol.openai_api_protocol import (
     ModelPermission,
     UsageInfo,
 )
-from fastchat.protocol.api_protocol import (
+from sfbot.serve.protocol.api_protocol import (
     APIChatCompletionRequest,
     APITokenCheckRequest,
     APITokenCheckResponse,
     APITokenCheckResponseItem,
 )
-from fastchat.utils import build_logger
+from sfbot.utils import build_logger
 
 logger = build_logger("openai_api_server", "openai_api_server.log")
 

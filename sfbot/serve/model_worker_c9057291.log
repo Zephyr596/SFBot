@@ -1,0 +1,142 @@
+2024-05-21 17:00:50 | INFO | model_worker | Loading the model ['Llama-2-7b-chat-hf'] on worker c9057291, worker type: BigDLLLM worker...
+2024-05-21 17:00:50 | INFO | model_worker | Loading the model ['Llama-2-7b-chat-hf'] on worker c9057291, worker type: BigDLLLM worker...
+2024-05-21 17:00:50 | INFO | model_worker | Using low bit format: sym_int4, device: cpu
+2024-05-21 17:00:50 | INFO | model_worker | Using low bit format: sym_int4, device: cpu
+2024-05-21 17:00:50 | ERROR | stderr | /root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+2024-05-21 17:00:50 | ERROR | stderr | /root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+2024-05-21 17:00:50 | ERROR | stderr |   warnings.warn(
+2024-05-21 17:00:50 | ERROR | stderr |   warnings.warn(
+2024-05-21 17:00:52 | ERROR | stderr | Traceback (most recent call last):
+2024-05-21 17:00:52 | ERROR | stderr | Traceback (most recent call last):
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/utils/_errors.py", line 304, in hf_raise_for_status
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/utils/_errors.py", line 304, in hf_raise_for_status
+2024-05-21 17:00:52 | ERROR | stderr |     response.raise_for_status()
+2024-05-21 17:00:52 | ERROR | stderr |     response.raise_for_status()
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+2024-05-21 17:00:52 | ERROR | stderr |     raise HTTPError(http_error_msg, response=self)
+2024-05-21 17:00:52 | ERROR | stderr |     raise HTTPError(http_error_msg, response=self)
+2024-05-21 17:00:52 | ERROR | stderr | requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/Llama-2-7b-chat-hf/resolve/main/tokenizer_config.json
+2024-05-21 17:00:52 | ERROR | stderr | requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/Llama-2-7b-chat-hf/resolve/main/tokenizer_config.json
+2024-05-21 17:00:52 | ERROR | stderr | 
+2024-05-21 17:00:52 | ERROR | stderr | 
+2024-05-21 17:00:52 | ERROR | stderr | The above exception was the direct cause of the following exception:
+2024-05-21 17:00:52 | ERROR | stderr | The above exception was the direct cause of the following exception:
+2024-05-21 17:00:52 | ERROR | stderr | 
+2024-05-21 17:00:52 | ERROR | stderr | 
+2024-05-21 17:00:52 | ERROR | stderr | Traceback (most recent call last):
+2024-05-21 17:00:52 | ERROR | stderr | Traceback (most recent call last):
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/transformers/utils/hub.py", line 385, in cached_file
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/transformers/utils/hub.py", line 385, in cached_file
+2024-05-21 17:00:52 | ERROR | stderr |     resolved_file = hf_hub_download(
+2024-05-21 17:00:52 | ERROR | stderr |     resolved_file = hf_hub_download(
+2024-05-21 17:00:52 | ERROR | stderr |                     ^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |                     ^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+2024-05-21 17:00:52 | ERROR | stderr |     return fn(*args, **kwargs)
+2024-05-21 17:00:52 | ERROR | stderr |     return fn(*args, **kwargs)
+2024-05-21 17:00:52 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1221, in hf_hub_download
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1221, in hf_hub_download
+2024-05-21 17:00:52 | ERROR | stderr |     return _hf_hub_download_to_cache_dir(
+2024-05-21 17:00:52 | ERROR | stderr |     return _hf_hub_download_to_cache_dir(
+2024-05-21 17:00:52 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1325, in _hf_hub_download_to_cache_dir
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1325, in _hf_hub_download_to_cache_dir
+2024-05-21 17:00:52 | ERROR | stderr |     _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+2024-05-21 17:00:52 | ERROR | stderr |     _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1823, in _raise_on_head_call_error
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1823, in _raise_on_head_call_error
+2024-05-21 17:00:52 | ERROR | stderr |     raise head_call_error
+2024-05-21 17:00:52 | ERROR | stderr |     raise head_call_error
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1722, in _get_metadata_or_catch_error
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1722, in _get_metadata_or_catch_error
+2024-05-21 17:00:52 | ERROR | stderr |     metadata = get_hf_file_metadata(url=url, proxies=proxies, timeout=etag_timeout, headers=headers)
+2024-05-21 17:00:52 | ERROR | stderr |     metadata = get_hf_file_metadata(url=url, proxies=proxies, timeout=etag_timeout, headers=headers)
+2024-05-21 17:00:52 | ERROR | stderr |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+2024-05-21 17:00:52 | ERROR | stderr |     return fn(*args, **kwargs)
+2024-05-21 17:00:52 | ERROR | stderr |     return fn(*args, **kwargs)
+2024-05-21 17:00:52 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1645, in get_hf_file_metadata
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1645, in get_hf_file_metadata
+2024-05-21 17:00:52 | ERROR | stderr |     r = _request_wrapper(
+2024-05-21 17:00:52 | ERROR | stderr |     r = _request_wrapper(
+2024-05-21 17:00:52 | ERROR | stderr |         ^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |         ^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 372, in _request_wrapper
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 372, in _request_wrapper
+2024-05-21 17:00:52 | ERROR | stderr |     response = _request_wrapper(
+2024-05-21 17:00:52 | ERROR | stderr |     response = _request_wrapper(
+2024-05-21 17:00:52 | ERROR | stderr |                ^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |                ^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 396, in _request_wrapper
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 396, in _request_wrapper
+2024-05-21 17:00:52 | ERROR | stderr |     hf_raise_for_status(response)
+2024-05-21 17:00:52 | ERROR | stderr |     hf_raise_for_status(response)
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/utils/_errors.py", line 352, in hf_raise_for_status
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/huggingface_hub/utils/_errors.py", line 352, in hf_raise_for_status
+2024-05-21 17:00:52 | ERROR | stderr |     raise RepositoryNotFoundError(message, response) from e
+2024-05-21 17:00:52 | ERROR | stderr |     raise RepositoryNotFoundError(message, response) from e
+2024-05-21 17:00:52 | ERROR | stderr | huggingface_hub.utils._errors.RepositoryNotFoundError: 401 Client Error. (Request ID: Root=1-664c633f-2f7154681774af2a0301bb68;57b51155-2ae8-4345-8601-f3892e365629)
+2024-05-21 17:00:52 | ERROR | stderr | huggingface_hub.utils._errors.RepositoryNotFoundError: 401 Client Error. (Request ID: Root=1-664c633f-2f7154681774af2a0301bb68;57b51155-2ae8-4345-8601-f3892e365629)
+2024-05-21 17:00:52 | ERROR | stderr | 
+2024-05-21 17:00:52 | ERROR | stderr | 
+2024-05-21 17:00:52 | ERROR | stderr | Repository Not Found for url: https://huggingface.co/Llama-2-7b-chat-hf/resolve/main/tokenizer_config.json.
+2024-05-21 17:00:52 | ERROR | stderr | Repository Not Found for url: https://huggingface.co/Llama-2-7b-chat-hf/resolve/main/tokenizer_config.json.
+2024-05-21 17:00:52 | ERROR | stderr | Please make sure you specified the correct `repo_id` and `repo_type`.
+2024-05-21 17:00:52 | ERROR | stderr | Please make sure you specified the correct `repo_id` and `repo_type`.
+2024-05-21 17:00:52 | ERROR | stderr | If you are trying to access a private or gated repo, make sure you are authenticated.
+2024-05-21 17:00:52 | ERROR | stderr | If you are trying to access a private or gated repo, make sure you are authenticated.
+2024-05-21 17:00:52 | ERROR | stderr | Invalid username or password.
+2024-05-21 17:00:52 | ERROR | stderr | Invalid username or password.
+2024-05-21 17:00:52 | ERROR | stderr | 
+2024-05-21 17:00:52 | ERROR | stderr | 
+2024-05-21 17:00:52 | ERROR | stderr | The above exception was the direct cause of the following exception:
+2024-05-21 17:00:52 | ERROR | stderr | The above exception was the direct cause of the following exception:
+2024-05-21 17:00:52 | ERROR | stderr | 
+2024-05-21 17:00:52 | ERROR | stderr | 
+2024-05-21 17:00:52 | ERROR | stderr | Traceback (most recent call last):
+2024-05-21 17:00:52 | ERROR | stderr | Traceback (most recent call last):
+2024-05-21 17:00:52 | ERROR | stderr |   File "<frozen runpy>", line 198, in _run_module_as_main
+2024-05-21 17:00:52 | ERROR | stderr |   File "<frozen runpy>", line 198, in _run_module_as_main
+2024-05-21 17:00:52 | ERROR | stderr |   File "<frozen runpy>", line 88, in _run_code
+2024-05-21 17:00:52 | ERROR | stderr |   File "<frozen runpy>", line 88, in _run_code
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/zehua/SFBot/sfbot/serve/low_bit_worker.py", line 305, in <module>
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/zehua/SFBot/sfbot/serve/low_bit_worker.py", line 305, in <module>
+2024-05-21 17:00:52 | ERROR | stderr |     worker = BigDLLLMWorker(
+2024-05-21 17:00:52 | ERROR | stderr |     worker = BigDLLLMWorker(
+2024-05-21 17:00:52 | ERROR | stderr |              ^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |              ^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/zehua/SFBot/sfbot/serve/low_bit_worker.py", line 70, in __init__
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/zehua/SFBot/sfbot/serve/low_bit_worker.py", line 70, in __init__
+2024-05-21 17:00:52 | ERROR | stderr |     self.model, self.tokenizer = load_model(
+2024-05-21 17:00:52 | ERROR | stderr |     self.model, self.tokenizer = load_model(
+2024-05-21 17:00:52 | ERROR | stderr |                                  ^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |                                  ^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/ipex_llm/transformers/loader.py", line 80, in load_model
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/ipex_llm/transformers/loader.py", line 80, in load_model
+2024-05-21 17:00:52 | ERROR | stderr |     tokenizer = tokenizer_cls.from_pretrained(model_path)
+2024-05-21 17:00:52 | ERROR | stderr |     tokenizer = tokenizer_cls.from_pretrained(model_path)
+2024-05-21 17:00:52 | ERROR | stderr |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 1952, in from_pretrained
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 1952, in from_pretrained
+2024-05-21 17:00:52 | ERROR | stderr |     resolved_config_file = cached_file(
+2024-05-21 17:00:52 | ERROR | stderr |     resolved_config_file = cached_file(
+2024-05-21 17:00:52 | ERROR | stderr |                            ^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |                            ^^^^^^^^^^^^
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/transformers/utils/hub.py", line 406, in cached_file
+2024-05-21 17:00:52 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/transformers/utils/hub.py", line 406, in cached_file
+2024-05-21 17:00:52 | ERROR | stderr |     raise EnvironmentError(
+2024-05-21 17:00:52 | ERROR | stderr |     raise EnvironmentError(
+2024-05-21 17:00:52 | ERROR | stderr | OSError: Llama-2-7b-chat-hf is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+2024-05-21 17:00:52 | ERROR | stderr | OSError: Llama-2-7b-chat-hf is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+2024-05-21 17:00:52 | ERROR | stderr | If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2024-05-21 17:00:52 | ERROR | stderr | If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`

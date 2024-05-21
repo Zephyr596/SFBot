@@ -1,0 +1,39 @@
+2024-05-21 17:00:07 | INFO | controller | args: Namespace(host='localhost', port=21001, dispatch_method='shortest_queue', ssl=False)
+2024-05-21 17:00:07 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m3221923[0m]
+2024-05-21 17:00:07 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-05-21 17:00:07 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-05-21 17:00:07 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://localhost:21001[0m (Press CTRL+C to quit)
+2024-05-21 17:00:25 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-05-21 17:00:25 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-05-21 17:00:25 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-05-21 17:00:25 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m3221923[0m]
+2024-05-21 17:00:25 | ERROR | stderr | Traceback (most recent call last):
+2024-05-21 17:00:25 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/asyncio/runners.py", line 118, in run
+2024-05-21 17:00:25 | ERROR | stderr |     return self._loop.run_until_complete(task)
+2024-05-21 17:00:25 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:25 | ERROR | stderr |   File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+2024-05-21 17:00:25 | ERROR | stderr | asyncio.exceptions.CancelledError
+2024-05-21 17:00:25 | ERROR | stderr | 
+2024-05-21 17:00:25 | ERROR | stderr | During handling of the above exception, another exception occurred:
+2024-05-21 17:00:25 | ERROR | stderr | 
+2024-05-21 17:00:25 | ERROR | stderr | Traceback (most recent call last):
+2024-05-21 17:00:25 | ERROR | stderr |   File "<frozen runpy>", line 198, in _run_module_as_main
+2024-05-21 17:00:25 | ERROR | stderr |   File "<frozen runpy>", line 88, in _run_code
+2024-05-21 17:00:25 | ERROR | stderr |   File "/root/zehua/SFBot/sfbot/serve/controller.py", line 389, in <module>
+2024-05-21 17:00:25 | ERROR | stderr |     uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+2024-05-21 17:00:25 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/uvicorn/main.py", line 575, in run
+2024-05-21 17:00:25 | ERROR | stderr |     server.run()
+2024-05-21 17:00:25 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/uvicorn/server.py", line 65, in run
+2024-05-21 17:00:25 | ERROR | stderr |     return asyncio.run(self.serve(sockets=sockets))
+2024-05-21 17:00:25 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-21 17:00:25 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/asyncio/runners.py", line 190, in run
+2024-05-21 17:00:25 | ERROR | stderr |     return runner.run(main)
+2024-05-21 17:00:25 | ERROR | stderr |            ^^^^^^^^^^^^^^^^
+2024-05-21 17:00:25 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/asyncio/runners.py", line 123, in run
+2024-05-21 17:00:25 | ERROR | stderr |     raise KeyboardInterrupt()
+2024-05-21 17:00:25 | ERROR | stderr | KeyboardInterrupt
+2024-05-21 17:00:26 | ERROR | stderr | Exception ignored in: <module 'threading' from '/root/anaconda3/envs/zehua-llm/lib/python3.11/threading.py'>
+2024-05-21 17:00:26 | ERROR | stderr | Traceback (most recent call last):
+2024-05-21 17:00:26 | ERROR | stderr |   File "/root/anaconda3/envs/zehua-llm/lib/python3.11/threading.py", line 1590, in _shutdown
+2024-05-21 17:00:26 | ERROR | stderr |     lock.acquire()
+2024-05-21 17:00:26 | ERROR | stderr | KeyboardInterrupt:
