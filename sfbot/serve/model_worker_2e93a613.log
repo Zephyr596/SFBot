@@ -1,40 +1,0 @@
-2024-05-21 17:09:36 | INFO | model_worker | Loading the model ['Llama-2-sym_int4_quant'] on worker 2e93a613, worker type: BigDLLLM worker...
-2024-05-21 17:09:36 | INFO | model_worker | Loading the model ['Llama-2-sym_int4_quant'] on worker 2e93a613, worker type: BigDLLLM worker...
-2024-05-21 17:09:36 | INFO | model_worker | Using low bit format: sym_int4, device: cpu
-2024-05-21 17:09:36 | INFO | model_worker | Using low bit format: sym_int4, device: cpu
-2024-05-21 17:09:36 | ERROR | stderr | Loading checkpoint shards:   0%|                                                       | 0/2 [00:00<?, ?it/s]
-2024-05-21 17:09:36 | ERROR | stderr | Loading checkpoint shards:   0%|                                                       | 0/2 [00:00<?, ?it/s]
-2024-05-21 17:09:36 | ERROR | stderr | Loading checkpoint shards: 100%|███████████████████████████████████████████████| 2/2 [00:00<00:00, 17.39it/s]
-2024-05-21 17:09:36 | ERROR | stderr | Loading checkpoint shards: 100%|███████████████████████████████████████████████| 2/2 [00:00<00:00, 17.39it/s]
-2024-05-21 17:09:36 | ERROR | stderr | Loading checkpoint shards: 100%|███████████████████████████████████████████████| 2/2 [00:00<00:00, 17.34it/s]
-2024-05-21 17:09:36 | ERROR | stderr | Loading checkpoint shards: 100%|███████████████████████████████████████████████| 2/2 [00:00<00:00, 17.34it/s]
-2024-05-21 17:09:36 | ERROR | stderr | 
-2024-05-21 17:09:36 | ERROR | stderr | 
-2024-05-21 17:09:36 | ERROR | stderr | /root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:392: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
-2024-05-21 17:09:36 | ERROR | stderr | /root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:392: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
-2024-05-21 17:09:36 | ERROR | stderr |   warnings.warn(
-2024-05-21 17:09:36 | ERROR | stderr |   warnings.warn(
-2024-05-21 17:09:36 | ERROR | stderr | /root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:397: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
-2024-05-21 17:09:36 | ERROR | stderr | /root/anaconda3/envs/zehua-llm/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:397: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
-2024-05-21 17:09:36 | ERROR | stderr |   warnings.warn(
-2024-05-21 17:09:36 | ERROR | stderr |   warnings.warn(
-2024-05-21 17:09:38 | INFO | model_worker | Register to controller
-2024-05-21 17:09:38 | INFO | model_worker | Register to controller
-2024-05-21 17:09:38 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m3243246[0m]
-2024-05-21 17:09:38 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m3243246[0m]
-2024-05-21 17:09:38 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
-2024-05-21 17:09:38 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
-2024-05-21 17:09:38 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
-2024-05-21 17:09:38 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
-2024-05-21 17:09:38 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://localhost:21002[0m (Press CTRL+C to quit)
-2024-05-21 17:09:38 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://localhost:21002[0m (Press CTRL+C to quit)
-2024-05-21 17:10:23 | INFO | model_worker | Send heart beat. Models: ['Llama-2-sym_int4_quant']. Semaphore: None. call_ct: 0. worker_id: 2e93a613. 
-2024-05-21 17:10:23 | INFO | model_worker | Send heart beat. Models: ['Llama-2-sym_int4_quant']. Semaphore: None. call_ct: 0. worker_id: 2e93a613. 
-2024-05-21 17:11:08 | INFO | model_worker | Send heart beat. Models: ['Llama-2-sym_int4_quant']. Semaphore: None. call_ct: 0. worker_id: 2e93a613. 
-2024-05-21 17:11:08 | INFO | model_worker | Send heart beat. Models: ['Llama-2-sym_int4_quant']. Semaphore: None. call_ct: 0. worker_id: 2e93a613. 
-2024-05-21 17:11:53 | INFO | model_worker | Send heart beat. Models: ['Llama-2-sym_int4_quant']. Semaphore: None. call_ct: 0. worker_id: 2e93a613. 
-2024-05-21 17:11:53 | INFO | model_worker | Send heart beat. Models: ['Llama-2-sym_int4_quant']. Semaphore: None. call_ct: 0. worker_id: 2e93a613. 
-2024-05-21 17:12:38 | INFO | model_worker | Send heart beat. Models: ['Llama-2-sym_int4_quant']. Semaphore: None. call_ct: 0. worker_id: 2e93a613. 
-2024-05-21 17:12:38 | INFO | model_worker | Send heart beat. Models: ['Llama-2-sym_int4_quant']. Semaphore: None. call_ct: 0. worker_id: 2e93a613. 
-2024-05-21 17:13:23 | INFO | model_worker | Send heart beat. Models: ['Llama-2-sym_int4_quant']. Semaphore: None. call_ct: 0. worker_id: 2e93a613. 
-2024-05-21 17:13:23 | INFO | model_worker | Send heart beat. Models: ['Llama-2-sym_int4_quant']. Semaphore: None. call_ct: 0. worker_id: 2e93a613. 
