@@ -1,3 +1,13 @@
 **/test/**/data/
 **/__pycache__/
 **/test/**/prompt/
+# Ignore all log files
+*.log
+*.log.*
+
+# Ignore specific log files in any subdirectory
+**/*.log
+**/*.log.*
+
+# Ignore .egg-info directories
+*.egg-info/

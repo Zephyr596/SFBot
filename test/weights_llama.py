@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 
 from ipex_llm.transformers import AutoModelForCausalLM
-from transformers import LlamaTokenizer
 from ipex_llm.transformers.low_bit_linear import ggml_int4_convert_fp32
 
 LLAMA2_PROMPT_FORMAT = """
@@ -77,7 +76,7 @@ weight_asym_np = flattened_weight_asym.numpy()
 # plt.savefig("./png/test_sym.png")
 
 
-
+plt.rcParams['font.size'] = 16
 n, bins, patches = plt.hist([weight_np, weight_asym_np], 
                             bins=100, alpha=0.75, 
                             color=['blue', 'yellow'],

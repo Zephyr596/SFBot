@@ -21,11 +21,11 @@ bar_width = 0.2
 
 # Colors for better contrast
 colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']
-
+hatchs = ['-', '/', '.', '\\']
 # Plotting bars for each precision type
 for i, ptype in enumerate(precision_types):
     results_by_type = [results[ptype][j] for j in range(len(categories))]
-    ax.bar(index + i * bar_width, results_by_type, bar_width, label=ptype, color=colors[i])
+    ax.bar(index + i * bar_width, results_by_type, bar_width, label=ptype, color=colors[i], hatch=hatchs[i])
 
 # Adding plot labels and title
 ax.set_xlabel('Category', fontsize=14)

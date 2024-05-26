@@ -30,8 +30,8 @@ x = np.arange(len(input_lengths))  # the label locations
 # 绘制柱形图
 width = 0.35  # the width of the bars
 fig, ax = plt.subplots(figsize=(10, 6))
-rects1 = ax.bar(x - width/2, means, width, label='Original Model', color='skyblue', yerr=stds, capsize=5)
-rects2 = ax.bar(x + width/2, means_int4, width, label='SYM_Int4 Quantized Model', color='lightgreen', yerr=stds_int4, capsize=5)
+rects1 = ax.bar(x - width/2, means, width, label='Original Model', color='skyblue', yerr=stds, capsize=5, hatch='/')
+rects2 = ax.bar(x + width/2, means_int4, width, label='SYM_Int4 Quantized Model', color='lightgreen', yerr=stds_int4, capsize=5, hatch='\\')
 
 # 添加文本标签、标题和自定义x轴刻度标签等
 ax.set_xlabel('Input Length')

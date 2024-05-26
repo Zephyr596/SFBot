@@ -38,8 +38,8 @@ x = np.arange(len(labels))  # the label locations
 width = 0.35  # the width of the bars
 
 fig, ax = plt.subplots()
-rects1 = ax.bar(x - width/2, mean_load_times[0], width, yerr=std_devs[0], label=models_labels[0], capsize=5, color='royalblue')
-rects2 = ax.bar(x + width/2, mean_load_times[1], width, yerr=std_devs[1], label=models_labels[1], capsize=5, color='seagreen')
+rects1 = ax.bar(x - width/2, mean_load_times[0], width, yerr=std_devs[0], label=models_labels[0], capsize=5, color='royalblue', hatch='/')
+rects2 = ax.bar(x + width/2, mean_load_times[1], width, yerr=std_devs[1], label=models_labels[1], capsize=5, color='seagreen', hatch='\\')
 
 ax.set_ylabel('Load Time (seconds)')
 ax.set_title('Load Time by Model and Quantization Method')
