@@ -29,8 +29,8 @@ In this project, I using the int4 low-bit quantization
 
 $$
 X_{i4}=\left\lfloor{\frac{8 \cdot X_{f32}}{\underset{ij}{max} (|X_{f32_{ij}}|)}}\right\rceil + 8= 
-  \left\lfloor{\frac{8}{{||X_{f32}||}_{\infty}} X_{f32}} \right\rceil + 8= 
-  \left\lfloor{s_{x_{f_{32}}}} X_{f32}\right\rceil + 8
+\left\lfloor{\frac{8}{{||X_{f32}||}_{\infty}} X_{f32}} \right\rceil + 8= 
+\left\lfloor{s_{x_{f_{32}}}} X_{f32}\right\rceil + 8
 $$
 
 
