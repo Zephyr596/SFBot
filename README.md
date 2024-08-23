@@ -1,46 +1,80 @@
 # SFBot
-Secure Fast ChatBot with INT4 Quantization for `LLaMA-2` Chat Model
+**Secure Fast ChatBot with INT4 Quantization for `LLaMA-2` Chat Model**
 
 ## Introduction
-This repository provides a secure and efficient implementation of a chatbot using the LLaMA-2-7B-chat-hf model. Key features include:
+This repository provides a secure and efficient implementation of a chatbot using the `LLaMA-2-7B-chat-hf` model. Key features include:
 
-* INT4 Quantization: Reduces model size and accelerates inference while maintaining high performance.
-* Enhanced Security: Integrate the Intel TDX technology to ensure safe deployment and interaction.
-* Optimized Performance: Leverages IPEX-LLM to enhance the speed and efficiency of the chat model.
+- **INT4 Quantization**: Reduces model size and accelerates inference while maintaining high performance.
+- **Enhanced Security**: Integrates Intel TDX technology to ensure safe deployment and interaction.
+- **Optimized Performance**: Leverages IPEX-LLM to enhance the speed and efficiency of the chat model.
 
-## How to
+## How To
 
 ### Overview
-The below picture is the brief introduction about the Chat Bot system.
-![alt text](assests/overview.png)
-The system is based on [FastChat](https://github.com/lm-sys/FastChat) and further developed.
+The diagram below gives a brief introduction to the ChatBot system.
 
-### System development
+![System Overview](assets/overview.png)
 
-Use FastChat's base worker and GUI, develop the customization Low bit worker and API server
+The system is based on [FastChat](https://github.com/lm-sys/FastChat) and has been further developed to support additional features.
 
-### Int4 low bit quantization
-For the normal in model traning, we usually using float data format and it cause big space 开销
-![alt text](<assests/data format.png>)
+### System Development
 
-So we can using quantization to 减少开销
+The system uses FastChat's base worker and GUI, with custom development for a low-bit worker and API server.
 
-In this project, I using the int4 low-bit quantization
+### INT4 Low-Bit Quantization
+In typical model training, floating-point data formats are used, leading to significant space overhead.
 
-$$
-X_{i4}=\left\lfloor{\frac{8 \cdot X_{f32}}{\underset{ij}{max} (|X_{f32_{ij}}|)}}\right\rceil + 8= 
-\left\lfloor{\frac{8}{{||X_{f32}||}_{\infty}} X_{f32}} \right\rceil + 8= 
-\left\lfloor{s_{x_{f_{32}}}} X_{f32}\right\rceil + 8
-$$
+![Data Format](assets/data_format.png)
 
+To reduce this overhead, quantization techniques can be employed. In this project, I used INT4 low-bit quantization implemented by GGML, and within the IPEX-LLM project, it was implemented using CPython.
 
-$$
-ndx_{f32}=\frac{15}{\underset{ij}{max}(X^{ij}_{f32})-\underset{ij}{min}(X^{ij}_{f32})}
-$$
+#### Symmetric INT4 Quantization
 
-$$
-zp_{xi32}=\left\lfloor ndx_{f32} \cdot \underset{ij}{min}(X^{ij}_{f32})\right\rceil
-$$
+![Symmetric Quantization](assets/sym.png)
 
-$$
-X_{i4} = \left\lfloor ndx_{f32} X_{f32}\right\rceil - zp_{xi32}$$
+#### Asymmetric INT4 Quantization
+
+![Asymmetric Quantization](assets/asym.png)
+
+#### Quantization Loss
+The following chart shows a comparison between the original and symmetrically quantized INT4 weights of the LLaMA-2-7B model:
+
+![Quantization Loss](assets/weights_loss.png)
+
+### Cloud Deployment
+
+The system is deployed in the cloud using Docker and Kubernetes.
+
+![Docker Deployment](assets/docker.png)
+
+The architecture is illustrated below:
+
+![Kubernetes Architecture](assets/k8s.png)
+
+## Demo
+
+### GUI
+The system's graphical user interface is shown below:
+
+![Web UI](assets/web_ui.png)
+
+### API Server
+Below is the illustration of the API server:
+
+![API Server](assets/api_server.png)
+
+## System Benchmark
+
+### Load Time of Original Model vs. Quantized Model
+![Load Time Comparison](assets/time.png)
+
+### C-Eval Test Result of LLaMA-2
+![C-Eval Test Results](assets/ceval.png)
+
+### System Response Latency with Different Input Lengths
+![Response Latency](assets/input_response.png)
+
+### System Concurrency Performance
+In this experiment, the system's load balancing capability was compared using 1 and 2 worker pods.
+
+![Kubernetes Comparison](assets/k8s_comparison_color_mapped.png)
